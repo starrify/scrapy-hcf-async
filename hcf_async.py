@@ -2,7 +2,7 @@
 """
 Yet another extension for dealing with the Hubstorage Crawl Frontier. Designed
 to be an asynchronous alternative to the `scrapylib.hcf.HcfMiddleware`.
-Supposed to integret better with the `scrapy` framework.
+Supposed to integrate better with the `scrapy` framework.
 """
 
 try:
