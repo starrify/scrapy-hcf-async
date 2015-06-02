@@ -9,7 +9,7 @@ class SampleSpider(scrapy.Spider):
     """A sample spider."""
 
     name = 'sample_spider'
-    start_urls = ()
+    start_urls = ['http://httpbin.org/get?baz=%d' % i for i in range(32)]
 
     def __init__(self, *args, **kwargs):
         """Init"""
