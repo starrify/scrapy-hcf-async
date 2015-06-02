@@ -172,6 +172,7 @@ class HcfAsync(object):
             self.link_buf = {}
             raise scrapy.exceptions.DontCloseSpider
         elif self.start_new_job and not self.new_job_scheduled:
+            # Issue a request to schedule a new job
             request = scrapy.FormRequest(
                 url='https://dash.scrapinghub.com/api/schedule.json',
                 method='POST',
